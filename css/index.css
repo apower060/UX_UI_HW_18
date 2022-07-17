@@ -27,7 +27,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background-color: wh#2122360ite;
+  background-color: #2122360
 }
 
 #hero {
@@ -77,39 +77,5 @@ nav {
   height: 40vw;
   border-radius: 50%;
   border: var(--ln);
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Faltoday.com%2Fwp-content%2Fuploads%2F2017%2F12%2Fferal-hog-pig.jpg%3Ffit%3D2600%252C1462&f=1&nofb=1");
- background-size: cover;
-}
-
-
-
-/*
- //other shit you've fucked up//
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  font-family: helvetica, arial, sans-serif;
-  color: white;
-  grid-template-areas:
-  "hover"
-  "disabled"
-  ;
-  height: 500px;
-}
-.hoverMe {
-  grid-area: hover;
-  background-color: red;
-  color: white;
-  width: 150px;
-  text-align: center;
-  height: 50px;
-  transition: 0.3s;
-}
-/* active state */
-/*
-.hoverMe:hover {
-  background-color:blue;
+  background-image: url(../images/UGLY\ HEAD.svg)
 }
