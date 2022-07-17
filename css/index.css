@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --ln: 1px solid #424242;
+}
+
+/*  */
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 3rem;
+  height: 72px;
+  padding: 0 2rem;
+      border: var(--ln);
+  border-radius: 0 0 0.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: wh#2122360ite;
+}
+
+#hero {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#hero > * {
+  display: flex;
+}
+
+.btn {
+  border: var(--ln);
+  padding: 1.5rem 2rem 1rem 2rem;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.btn > *:last-child {
+  border: var(--ln);
+  width: 80%;
+  height: 2px;
+}
+
+.left {
+  grid-column: span 4;
+  border-right: var(--ln);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.right {
+  grid-column: span 8;
+  align-items: center;
+  justify-content: center;
+}
+
+.right > .pfp {
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+  border: var(--ln);
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Faltoday.com%2Fwp-content%2Fuploads%2F2017%2F12%2Fferal-hog-pig.jpg%3Ffit%3D2600%252C1462&f=1&nofb=1");
+ background-size: cover;
+}
+
+
+
+/*
+ //other shit you've fucked up//
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  font-family: helvetica, arial, sans-serif;
+  color: white;
+  grid-template-areas:
+  "hover"
+  "disabled"
+  ;
+  height: 500px;
+}
+.hoverMe {
+  grid-area: hover;
+  background-color: red;
+  color: white;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+  transition: 0.3s;
+}
+/* active state */
+/*
+.hoverMe:hover {
+  background-color:blue;
+}
