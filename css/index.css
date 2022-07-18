@@ -2,13 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: monospace;
-}
+  font-family: roboto, monospace;
+  }
 
 body, html {
   width: 100%;
   height: 100%;
 }
+
 
 :root {
   --ln: 1px solid #424242;
@@ -27,7 +28,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background-color: #2122360
+  background-color: #212236
 }
 
 #hero {
@@ -38,12 +39,13 @@ nav {
 
 #hero > * {
   display: flex;
+
 }
 
 .btn {
   border: var(--ln);
   padding: 1.5rem 2rem 1rem 2rem;
-  border-radius: 0.25rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,5 +79,6 @@ nav {
   height: 40vw;
   border-radius: 50%;
   border: var(--ln);
-  background-image: url(../images/UGLY\ HEAD.svg)
+  background-color: #111111;
+  background-image: url(../images/BGgbV2.svg)
 }
